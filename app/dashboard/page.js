@@ -8,15 +8,6 @@ export default function Dashboard() {
       <Link href="/" className="btn btn-square">
         Home
       </Link>
-      <div className="p-48 dark:invert">
-        <Image
-          alt="random-photo"
-          src="https://picsum.photos/200"
-          height={1000}
-          width={1000}
-          className="w-full rounded-lg border-gray-200 dark:border-gray-800"
-        ></Image>
-      </div>
       <label className="swap swap-rotate">
         {/* this hidden checkbox controls the state */}
         <input type="checkbox" />
