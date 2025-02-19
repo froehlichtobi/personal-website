@@ -18,7 +18,6 @@ export default function Home() {
         <Link href="/dashboard" className="underline">
           Dashboard
         </Link>
-        <h1>WILL THIS CHANGE BE APPLIED AUTOMATICALLY?</h1>
       </main>
     </div>
   );
