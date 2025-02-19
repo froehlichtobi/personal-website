@@ -2,4 +2,4 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ### Currently building my own personal website!
 
-[Check it out](https://tobiasfrohlich.com){:target="\_blank"}
+[Check it out](https://tobiasfrohlich.com)
