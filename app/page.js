@@ -18,6 +18,25 @@ export default function Home() {
         <Link href="/dashboard" className="underline">
           Dashboard
         </Link>
+        <div className="card card-compact bg-base-100 w-96 shadow-xl">
+          <figure>
+            <Image
+              src="/Breathhold3000_Logo.png"
+              alt="Breathhold3000 - Logo"
+              width={400}
+              height={300}
+            />
+          </figure>
+          <div className="card-body">
+            <h2 className="card-title">Breathhold3000</h2>
+            <p>Increase your breathhold time with my first ever project!</p>
+            <div className="card-actions justify-center">
+              <Link href="https://breath.tobiasfrohlich.com" target="_blank">
+                <button className="btn btn-primary">Check it out</button>
+              </Link>
+            </div>
+          </div>
+        </div>
       </main>
     </div>
   );
