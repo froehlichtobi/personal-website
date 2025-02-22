@@ -5,7 +5,7 @@ import TestComponent from "@/component/TestComponent";
 export default function Home() {
   return (
     <div>
-      <div className="navbar bg-base-100">
+      <div className="navbar sticky top-0 z-50 shadow-md bg-base-100">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -29,13 +29,13 @@ export default function Home() {
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
             >
               <li>
-                <a>Projects</a>
+                <a href="#projects">Projects</a>
               </li>
               <li>
-                <a>Statistics</a>
+                <a href="#statistics">Statistics</a>
               </li>
               <li>
-                <a>Contact Me</a>
+                <a href="#contact">Contact Me</a>
               </li>
             </ul>
           </div>
@@ -44,13 +44,13 @@ export default function Home() {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <a>Projects</a>
+              <a href="#projects">Projects</a>
             </li>
             <li>
-              <a>Statistics</a>
+              <a href="#statistics">Statistics</a>
             </li>
             <li>
-              <a>Contact Me</a>
+              <a href="#contact">Contact Me</a>
             </li>
           </ul>
         </div>
@@ -79,6 +79,20 @@ export default function Home() {
           </label>
         </div>
       </div>
+      <div className="text-center">
+        <h2>SPACE</h2>
+        <h2>SPACE</h2>
+        <h2>SPACE</h2>
+        <h2>SPACE</h2>
+        <h2>SPACE</h2>
+        <h2>SPACE</h2>
+        <h2>SPACE</h2>
+        <h2>SPACE</h2>
+        <h2>SPACE</h2>
+        <h2>SPACE</h2>
+        <h2>SPACE</h2>
+        <h2>SPACE</h2>
+      </div>
       <div className="hero bg-base-200 min-h-screen">
         <div className="hero-content text-center">
           <div className="max-w-md">
@@ -87,7 +101,10 @@ export default function Home() {
             </p>
             <main className="flex flex-col gap-8 items-center sm:items-start">
               <TestComponent />
-              <div className="card card-compact bg-base-100 w-96 shadow-xl">
+              <div
+                className="card card-compact bg-base-100 w-96 shadow-xl scroll-mt-32"
+                id="projects"
+              >
                 <figure>
                   <Image
                     src="/Breathhold3000_Logo.png"
@@ -109,6 +126,36 @@ export default function Home() {
                   </div>
                 </div>
               </div>
+              <section
+                id="statistics"
+                className="h-screen bg-green-300 flex items-center justify-center scroll-mt-20"
+              >
+                <h1 className="text-3xl">Statistics Section</h1>
+              </section>
+
+              <section
+                id="contact"
+                className="h-screen bg-blue-400 flex items-center justify-center scroll-mt-20"
+              >
+                <h1 className="text-3xl ">Contact Me Section</h1>
+              </section>
+              <h2>SPACE</h2>
+              <h2>SPACE</h2>
+              <h2>SPACE</h2>
+              <h2>SPACE</h2>
+              <h2>SPACE</h2>
+              <h2>SPACE</h2>
+              <h2>SPACE</h2>
+              <h2>SPACE</h2>
+              <h2>SPACE</h2>
+              <h2>SPACE</h2>
+              <h2>SPACE</h2>
+              <h2>SPACE</h2>
+              <h2>SPACE</h2>
+              <h2>SPACE</h2>
+              <h2>SPACE</h2>
+              <h2>SPACE</h2>
+              <h2>SPACE</h2>
             </main>
           </div>
         </div>
