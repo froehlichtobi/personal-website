@@ -39,7 +39,9 @@ export default function Home() {
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-3xl">Tobias Fröhlich</a>
+          <a href="#" className="btn btn-ghost text-3xl">
+            Tobias Fröhlich
+          </a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
