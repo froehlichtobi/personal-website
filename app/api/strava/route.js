@@ -1,11 +1,5 @@
 import { NextResponse } from "next/server";
 
-// ADD THIS IN .env FILE locally
-// STRAVA_CLIENT_ID=your_client_id
-// STRAVA_CLIENT_SECRET=your_client_secret
-// STRAVA_REFRESH_TOKEN=your_refresh_token
-// STRAVA_ACCESS_TOKEN=your_access_token
-
 const STRAVA_API_URL = "https://www.strava.com/api/v3";
 const CLIENT_ID = process.env.STRAVA_CLIENT_ID;
 const CLIENT_SECRET = process.env.STRAVA_CLIENT_SECRET;
@@ -30,7 +24,8 @@ async function refreshAccessToken() {
     });
 
     const data = await response.json();
-    if (!response.ok) throw new Error(data.message || "Failed to refresh token");
+    if (!response.ok)
+      throw new Error(data.message || "Failed to refresh token");
 
     accessToken = data.access_token; // Update the stored access token
     return accessToken;
@@ -43,7 +38,7 @@ async function refreshAccessToken() {
 // Function to fetch data from Strava API
 async function fetchStravaData() {
   try {
-    const response = await fetch(`${STRAVA_API_URL}/athlete`, {
+    const response = await fetch(`${STRAVA_API_URL}/athlete/activities`, {
       headers: {
         Authorization: `Bearer ${accessToken}`,
       },
@@ -71,7 +66,11 @@ async function fetchStravaData() {
 // API Route handler
 export async function GET() {
   const data = await fetchStravaData();
-  if (!data) return NextResponse.json({ error: "Failed to fetch data" }, { status: 500 });
+  if (!data)
+    return NextResponse.json(
+      { error: "Failed to fetch data" },
+      { status: 500 }
+    );
 
   return NextResponse.json(data);
 }
