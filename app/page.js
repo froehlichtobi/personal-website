@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import TestComponent from "@/component/TestComponent";
+import StravaData from "@/component/StravaData";
 
 export default function Home() {
   return (
@@ -133,6 +134,7 @@ export default function Home() {
                 className="h-screen bg-green-300 flex items-center justify-center scroll-mt-20"
               >
                 <h1 className="text-3xl">Statistics Section</h1>
+                <StravaData />
               </section>
 
               <section
