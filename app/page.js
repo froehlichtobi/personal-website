@@ -136,6 +136,8 @@ export default function Home() {
               >
                 <h1 className="text-3xl">Statistics Section</h1>
                 <StravaData />
+                <br></br>
+                <RechartsLine />
               </section>
 
               <section
@@ -158,7 +160,6 @@ export default function Home() {
               <h2>SPACE</h2>
               <h2>SPACE</h2>
               <h2>SPACE</h2>
-              <RechartsLine />
               <h2>SPACE</h2>
               <h2>SPACE</h2>
               <h2>SPACE</h2>

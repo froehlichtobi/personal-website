@@ -7,11 +7,17 @@ const data = [
   { name: "B", uv: 300 },
   { name: "C", uv: 200 },
   { name: "D", uv: 278 },
+  { name: "E", uv: 378 },
+  { name: "F", uv: 478 },
+  { name: "G", uv: 278 },
+  { name: "H", uv: 1278 },
+  { name: "I", uv: 2078 },
+
 ];
 
 export default function RechartsLine() {
   return (
-    <LineChart width={400} height={400} data={data}>
+    <LineChart width={800} height={400} data={data}>
       <CartesianGrid strokeDasharray="3 3" />
       <XAxis dataKey="name" />
       <YAxis />
