@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import TestComponent from "@/component/TestComponent";
 import StravaData from "@/component/StravaData";
+import RechartsLine from "@/component/RechartsLine";
 
 export default function Home() {
   return (
@@ -157,6 +158,7 @@ export default function Home() {
               <h2>SPACE</h2>
               <h2>SPACE</h2>
               <h2>SPACE</h2>
+              <RechartsLine />
               <h2>SPACE</h2>
               <h2>SPACE</h2>
               <h2>SPACE</h2>
