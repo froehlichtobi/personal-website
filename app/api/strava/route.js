@@ -72,5 +72,10 @@ export async function GET() {
       { status: 500 }
     );
 
-  return NextResponse.json(data);
+  const filteredData = data.map(({ moving_time, type, start_date }) => ({
+    moving_time,
+    type,
+    start_date,
+  }));
+  return NextResponse.json(filteredData);
 }

@@ -137,7 +137,6 @@ export default function Home() {
                 <h1 className="text-3xl">Statistics Section</h1>
                 <StravaData />
                 <br></br>
-                <RechartsLine />
               </section>
 
               <section
