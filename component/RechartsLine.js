@@ -1,5 +1,5 @@
 "use client"; // Needed for Next.js client components
-
+import { useState, useEffect } from "react";
 import {
   LineChart,
   Line,
@@ -10,13 +10,24 @@ import {
   Legend,
 } from "recharts";
 
-export default function RechartsLine(data) {
-  console.log("SIND DATEN SCHON DAAAAA?????? " + JSON.stringify(data, null, 2));
-  if (!data || data.length === 0) {
+export default function RechartsLine({ data }) {
+  const [chartData, setChartData] = useState([]);
+
+  useEffect(() => {
+    console.log(
+      "SIND DATEN SCHON DAAAAA?????? " + JSON.stringify(data, null, 2)
+    );
+    if (data && data.length > 0) {
+      setChartData(data);
+    }
+  }, [data]);
+
+  if (chartData.length === 0) {
     return <p>Loading...</p>; // Show loading message until data is available
   }
+
   return (
-    <LineChart width={800} height={400} data={data}>
+    <LineChart width={800} height={400} data={chartData}>
       <CartesianGrid strokeDasharray="3 3" />
       <XAxis
         dataKey="start_date"
