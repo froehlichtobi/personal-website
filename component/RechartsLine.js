@@ -33,8 +33,12 @@ export default function RechartsLine({ data }) {
         dataKey="start_date"
         tickFormatter={(date) => new Date(date).toLocaleDateString()}
       />
-      <YAxis />
-      <Tooltip />
+      <YAxis 
+        dataKey="moving_time"
+        tickFormatter={(time) => (time / 60).toFixed(1)} // Convert seconds to minutes
+        label={{ value: "Minutes", angle: -90, position: "insideLeft" }} // Optional label
+      />
+      <Tooltip formatter={(value) => `${(value / 60).toFixed(1)} min`} />
       <Legend />
       <Line type="monotone" dataKey="moving_time" stroke="#8884d8" />
     </LineChart>
