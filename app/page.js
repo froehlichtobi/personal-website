@@ -100,9 +100,7 @@ export default function Home() {
       <div className="hero bg-base-200 min-h-screen">
         <div className="hero-content text-center">
           <div className="max-w-md">
-            <p className="py-4">
-              Hallo bla bla bla test test test. Test test 123 123 test.
-            </p>
+            <h1 className="text-3xl ">Projects</h1>
             <main className="flex flex-col gap-8 items-center sm:items-start">
               <TestComponent />
               <div
