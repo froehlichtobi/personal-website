@@ -128,42 +128,25 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <section
-                id="statistics"
-                className="h-screen bg-green-300 flex items-center justify-center scroll-mt-20"
-              >
-                <h1 className="text-3xl">Statistics Section</h1>
-                <StravaData />
-                <br></br>
-              </section>
-
-              <section
-                id="contact"
-                className="h-screen bg-blue-400 flex items-center justify-center scroll-mt-20"
-              >
-                <h1 className="text-3xl ">Contact Me Section</h1>
-              </section>
-              <h2>SPACE</h2>
-              <h2>SPACE</h2>
-              <h2>SPACE</h2>
-              <h2>SPACE</h2>
-              <h2>SPACE</h2>
-              <h2>SPACE</h2>
-              <h2>SPACE</h2>
-              <h2>SPACE</h2>
-              <h2>SPACE</h2>
-              <h2>SPACE</h2>
-              <h2>SPACE</h2>
-              <h2>SPACE</h2>
-              <h2>SPACE</h2>
-              <h2>SPACE</h2>
-              <h2>SPACE</h2>
-              <h2>SPACE</h2>
-              <h2>SPACE</h2>
             </main>
           </div>
         </div>
       </div>
+      <section
+        id="statistics"
+        className="h-screen bg-green-300 flex items-center justify-center scroll-mt-20"
+      >
+        <h1 className="text-3xl">Statistics Section</h1>
+        <StravaData />
+        <br></br>
+      </section>
+
+      <section
+        id="contact"
+        className="h-screen bg-blue-400 flex items-center justify-center scroll-mt-20"
+      >
+        <h1 className="text-3xl ">Contact Me Section</h1>
+      </section>
     </div>
   );
 }
