@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import TestComponent from "@/component/TestComponent";
 import StravaData from "@/component/StravaData";
 import RechartsLine from "@/component/RechartsLine";
 
@@ -46,7 +45,7 @@ export default function Home() {
           </a>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
+          <ul className="menu menu-horizontal px-1 font-bold">
             <li>
               <a href="#projects">Projects</a>
             </li>
@@ -100,11 +99,10 @@ export default function Home() {
       <div className="hero bg-base-200 min-h-screen">
         <div className="hero-content text-center">
           <div className="max-w-md">
-            <h1 className="text-3xl ">Projects</h1>
+            <h1 className="text-3xl font-bold mb-4">Projects</h1>
             <main className="flex flex-col gap-8 items-center sm:items-start">
-              <TestComponent />
               <div
-                className="card card-compact bg-base-100 w-96 shadow-xl scroll-mt-32"
+                className="card card-compact bg-base-100 w-96 shadow-xl scroll-m-44"
                 id="projects"
               >
                 <figure>
@@ -134,18 +132,23 @@ export default function Home() {
       </div>
       <section
         id="statistics"
-        className="h-screen bg-green-300 flex items-center justify-center scroll-mt-20"
+        className="h-screen flex-col items-center justify-center scroll-mt-20"
       >
-        <h1 className="text-3xl">Statistics Section</h1>
-        <StravaData />
+        <h1 className="text-3xl font-bold text-center mb-4">Statistics</h1>
+        <p className="text-center mb-4">
+          My last workouts extracted from Strava
+        </p>
+        <div className="flex justify-center">
+          <StravaData />
+        </div>
         <br></br>
       </section>
 
       <section
         id="contact"
-        className="h-screen bg-blue-400 flex items-center justify-center scroll-mt-20"
+        className="h-screen flex items-center justify-center scroll-mt-20"
       >
-        <h1 className="text-3xl ">Contact Me Section</h1>
+        <h1 className="text-3xl font-bold">Contact Me</h1>
       </section>
     </div>
   );
