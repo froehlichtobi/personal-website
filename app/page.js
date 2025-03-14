@@ -146,9 +146,37 @@ export default function Home() {
 
       <section
         id="contact"
-        className="h-screen flex items-center justify-center scroll-mt-20"
+        className="h-screen bg-base-200 flex flex-col items-center justify-center scroll-mt-20"
       >
-        <h1 className="text-3xl font-bold">Contact Me</h1>
+        <h1 className="text-3xl font-bold text-center mb-4">Contact Me</h1>
+        <div className="flex flex-col items-center">
+          <div className="flex items-center space-x-8">
+            <a
+              href="https://github.com/froehlichtobi"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                src="/github-mark/github-mark.png"
+                alt="GitHub"
+                width={80}
+                height={60}
+              />
+            </a>
+            <a
+              href="https://linkedin.com/in/tobias-froehlich"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                src="/in-logo/LI-In-Bug.png"
+                alt="LinkedIn"
+                width={80}
+                height={60}
+              />
+            </a>
+          </div>
+        </div>
       </section>
     </div>
   );
