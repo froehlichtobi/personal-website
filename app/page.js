@@ -145,11 +145,11 @@ export default function Home() {
       </section>
       <section
         id="contact"
-        className="h-screen bg-base-200 flex flex-col items-center justify-center scroll-mt-20"
+        className="h-auto pt-20 pb-20 bg-base-200 flex flex-col items-center justify-center scroll-mt-20"
       >
         <h1 className="text-3xl font-bold text-center mb-4">Contact Me</h1>
         <div className="flex flex-col items-center">
-          <div className="flex items-center space-x-8">
+          <div className="flex gap-4 items-center space-x-8">
             <a
               className="contactme-icons"
               href="https://github.com/froehlichtobi"
