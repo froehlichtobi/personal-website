@@ -143,7 +143,6 @@ export default function Home() {
         </div>
         <br></br>
       </section>
-
       <section
         id="contact"
         className="h-screen bg-base-200 flex flex-col items-center justify-center scroll-mt-20"
@@ -152,6 +151,7 @@ export default function Home() {
         <div className="flex flex-col items-center">
           <div className="flex items-center space-x-8">
             <a
+              className="contactme-icons"
               href="https://github.com/froehlichtobi"
               target="_blank"
               rel="noopener noreferrer"
@@ -175,9 +175,23 @@ export default function Home() {
                 height={60}
               />
             </a>
+            <a
+              className="contactme-icons"
+              href="mailto:maileinfügen?"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                src="/email-icon.svg"
+                alt="Email me"
+                width={80}
+                height={60}
+              ></Image>
+            </a>
           </div>
         </div>
       </section>
+       
     </div>
   );
 }

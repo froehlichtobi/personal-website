@@ -7,10 +7,19 @@
   --foreground: #171717;
 }
 
+.contactme-icons {
+  filter: invert(0%);
+  transition: filter 0.3s ease;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+  }
+
+  .contactme-icons {
+    filter: invert(100%);
   }
 }
 
