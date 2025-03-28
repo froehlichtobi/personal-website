@@ -11,6 +11,13 @@ export default function StravaData() {
       const response = await fetch("/api/strava");
       const result = await response.json();
       setData(result); // Store data in state
+      if (data) {
+        const totalMovingTime = data.reduce(
+          (sum, activity) => sum + activity.moving_time,
+          0
+        );
+        console.log("totalmovingtime: " + totalMovingTime);
+      }
     } catch (error) {
       console.error("Error fetching Strava data:", error);
       setData({ error: "Failed to load data" });
@@ -20,11 +27,6 @@ export default function StravaData() {
   useEffect(() => {
     getStravaData();
   }, []);
-
-  //const totalMovingTime = data.reduce(
-  //  (sum, activity) => sum + activity.moving_time,
-  //  0
-  // );
 
   return (
     <>

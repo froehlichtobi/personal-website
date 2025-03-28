@@ -17,9 +17,6 @@ export default function RechartsLine({ data }) {
   const [chartData, setChartData] = useState([]);
 
   useEffect(() => {
-    console.log(
-      "SIND DATEN SCHON DAAAAA?????? " + JSON.stringify(data, null, 2)
-    );
     if (data && data.length > 0) {
       setChartData(data);
     }
