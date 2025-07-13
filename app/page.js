@@ -138,7 +138,7 @@ export default function Home() {
         <p className="text-center mb-4">
           My last workouts extracted from Strava
         </p>
-        <p>work in progress!</p>
+        <p className="text-center">work in progress!</p>
         <div className="flex justify-center">
           <StravaData />
         </div>
