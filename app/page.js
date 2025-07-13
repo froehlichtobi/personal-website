@@ -83,6 +83,7 @@ export default function Home() {
         </div>
       </div>
       <div className="text-center">
+        <h2>work in progress!</h2>
         <h2>SPACE</h2>
         <h2>SPACE</h2>
         <h2>SPACE</h2>
@@ -93,8 +94,7 @@ export default function Home() {
         <h2>SPACE</h2>
         <h2>SPACE</h2>
         <h2>SPACE</h2>
-        <h2>SPACE</h2>
-        <h2>SPACE</h2>
+        <h2>work in progress!</h2>
       </div>
       <div className="hero bg-base-200 min-h-screen">
         <div className="hero-content text-center">
@@ -138,6 +138,7 @@ export default function Home() {
         <p className="text-center mb-4">
           My last workouts extracted from Strava
         </p>
+        <p>work in progress!</p>
         <div className="flex justify-center">
           <StravaData />
         </div>
